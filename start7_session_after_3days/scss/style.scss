@@ -40,21 +40,11 @@
     box-shadow: 1px 1px 2vh white;
 }
 
-@media screen and (max-width: 375px) {
-    .img_sfera {
-        position: absolute;
-        top: 35vh;
-        left: 8vw;
-        width: 30vw;
-    }
-}
-
-@media screen and (min-width: 376px) {
-    .img_sfera {
-        position: absolute;
-        top: 36.5vh;
-        left: 8.5vw;
-    }
+.img_sfera {
+    position: relative;
+    bottom: 2vh;
+    right: 26vw;
+    width: 33vw;
 }
 
 .btn_grid {
@@ -64,6 +54,7 @@
     width: 70vw;
     height: 13vh;
     justify-items: start;
+    margin-top: -4vh;
 }
 
 .img_btn1lvl {
@@ -105,43 +96,16 @@
     margin-right: 4vw;
 }
 
-@media screen and (max-width: 375px) {
-    .img_sfera15 {
-        position: absolute;
-        top: 50.5vh;
-        left: 8.7vw;
-        width: 30vw;
-    }
-}
-
-@media screen and (min-width: 376px) {
-    .img_sfera15 {
-        position: absolute;
-        top: 52.5vh;
-        left: 8.7vw;
-    }
-}
-
 
 .p1_btn15 {
     margin-left: -10vw;
 }
 
-@media screen and (max-width: 375px) {
-    .img_sfera3d {
-        position: absolute;
-        top: 66.5vh;
-        left: 8.4vw;
-        width: 38vw;
-    }
-}
-
-@media screen and (min-width: 376px) {
-    .img_sfera3d {
-        position: absolute;
-        top: 68vh;
-        left: 8.4vw;
-    }
+.img_sfera3d {
+    position: relative;
+    bottom: 2vh;
+    right: 21vw;
+    width: 43vw;
 }
 
 .p1_btnfree {
