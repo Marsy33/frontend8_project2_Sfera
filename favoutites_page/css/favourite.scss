@@ -1,3 +1,11 @@
+@mixin btnReset() {
+    border: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /** Fonts part **/
 @font-face {
     font-family: 'SFProDisplay';
@@ -69,39 +77,69 @@ hr {
 }
 
 .interests {
-    max-height: 40px;
-    padding-top: 10px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 55px;
+    column-gap: 8px;
+    margin: 10px 0;
 
-    .interests_btn {
-        display: flex;
-        min-width: 295px;
-        max-height: 40px;
+    .interests_inner {
+        position: relative;
         margin-left: 16px;
-        border-radius: 12.5px;
-        border-style: none;
-        background: rgb(48, 44, 51);
-        box-shadow: inset -6.22px -6.22px rgba(69, 59, 81, 0.5);
-    }
 
-    .btn_img {
-        margin-top: 5px;
-        margin-left: 5px;
-    }
+        .interests_inner {
+            @include btnReset();
+            background: linear-gradient(53.67deg, #FE84FF 13.04%, #B83DB2 37.39%, #9756DB 60.22%, #4B87E7 84.58%);
+            box-shadow: inset -4px -3px 4px rgba(0, 0, 0, 0.25), inset 5px 5px 9px rgba(255, 255, 255, 0.25);
+            filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+            border-radius: 20px;
+            padding: 15px;
+            position: absolute;
+            z-index: 2;
+            top: 5px;
 
-    .interests_text {
-        font-family: 'SFProDisplay';
-        font-weight: normal;
-        font-size: 15px;
-        color: rgba(255, 255, 255, 0.3);
-        margin-top: 11px;
-    }
+            &::before,
+            &::after {
+                position: absolute;
+                content: '';
+                border-radius: 30px;
+                background: #FFFFFF;
+            }
 
-    .btn_img_square {
-        margin-left: 8px;
-    }
-}
+            &::before {
+                width: 3px;
+                height: 18px;
+            }
 
+            &::after {
+                height: 3px;
+                width: 18px;
+            }
+        }
+
+        .interests__input-text {
+            outline: none;
+            border-radius: 15px;
+            border: none;
+            background-color: #302C33;
+            box-shadow: inset -6.22302px -6.22302px 6.22302px #453B51, inset 3.73381px 3.73381px 6.22302px rgba(0, 0, 0, 0.5);
+            border-radius: 12.446px;
+            width: calc(100% - 60px);
+            height: 40px;
+            padding: 0;
+            padding-left: 55px;
+            position: absolute;
+
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.3);
+                font-size: 15px;
+                line-height: 120%;
+            }
+        }
+        .btn_img_square {
+            margin-left: 8px;
+        }
+    }
+    }
 /** Header part **/
 
 .long-btn {
