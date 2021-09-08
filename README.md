@@ -12,7 +12,7 @@
 * Мероприятия по интересам
 
 ## Как работает эта магия?
-SFERA определит самых релевантных/близких по интересам, и в режиме бизнес-тиндера покажет вам результат подборки<br><br>
+SFERA определит самых релевантных/близких по интересам и покажет вам результат подборки<br><br>
 ![account.gif](start7_first_session/assets/images/account.gif)<br><br>
 ![account_fields](start7_first_session/assets/images/account_text_fields.gif)
 
